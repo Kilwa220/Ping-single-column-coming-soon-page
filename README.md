@@ -1,18 +1,3 @@
-# Frontend Mentor - Ping coming soon page
-
-![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)
-
-## Welcome! 👋
-
-# Frontend Mentor - Single price grid component
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-
 # Frontend Mentor - Intro component with sign up form
 
 ## Welcome! 👋
