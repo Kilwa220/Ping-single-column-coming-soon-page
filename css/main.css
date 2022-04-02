@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+/* START GLOBALE VARIBALE */
+:root {
+  --clr-blue: hsl(223, 87%, 63%);
+  --clr-pale-blue: hsl(223, 100%, 88%);
+  --clr-light-red: hsl(354, 100%, 66%);
+  --clr-gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+/* END GLOABLE VARIBALE */
+
+/* START COMPENANTE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+/* END COMPENANTE */
+
+/* START BODY */
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+/* END BODY */
+
+/* START HEADER */
+header {
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+/* END HEADER */
+
+/* START MAIN */
+main {
+  text-align: center;
+}
+
+main .container h1 {
+  font-size: 1.5rem;
+  color: var(--clr-gray);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  main .container h1 {
+    font-size: 3rem;
+  }
+}
+
+main .container h1 span {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+main .container p {
+  color: var(--very-dark-blue);
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  main .container p {
+    font-size: 1.5rem;
+  }
+}
+
+main .container form {
+  max-width: 100%;
+}
+
+main .container form .input {
+  margin-bottom: 15px;
+}
+
+main .container form input {
+  display: block;
+  width: 100%;
+  padding: 17px 30px;
+  border-radius: 25px;
+}
+
+main .container form [type="email"] {
+  border: 1px solid var(--clr-pale-blue);
+  caret-color: var(--clr-blue);
+}
+
+main .container form .placeholder-change::placeholder {
+  color: #da2f2f;
+}
+
+main form span.error {
+  color: #da2f2f;
+  font-style: italic;
+  margin: 7px 0 35px;
+  display: block;
+}
+
+main .container form [type="submit"] {
+  background-image: linear-gradient(to top, var(--clr-blue) 50%, white 50%);
+  background-size: 100% 200%;
+  background-position: left bottom;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.5s, border 0.5s 0.2s, color 0.5s 0.2s;
+}
+
+main .container form [type="submit"]:hover {
+  background-position: left top;
+  color: var(--clr-blue);
+  border: 1px solid var(--clr-blue);
+}
+
+@media (min-width: 768px) {
+  main .container form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  main .container form .input {
+    width: 500px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  main .container form [type="submit"] {
+    width: 250px;
+  }
+}
+
+main form input:focus {
+  border-color: var(--clr-blue);
+  outline: none;
+}
+
+main .container img {
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+@media (min-width: 768px) {
+  main .container img {
+    max-width: 800px;
+  }
+}
+
+main .container .social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+main .social li {
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-content: center;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: 0.5s;
+
+  cursor: pointer;
+}
+
+main .social li:hover {
+  transform: translateY(-12px) rotate(360deg);
+  background-color: var(--clr-blue);
+  color: white;
+  border: none;
+}
+
+main .social li a {
+  color: var(--clr-blue);
+}
+
+main .social li:hover a {
+  color: white;
+}
+
+main .social li a i {
+  font-weight: 600;
+}
+
+main footer {
+  color: hsl(0deg 0% 35%);
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+/* END MAIN */
+
+/* START FOOTER */
+footer:not(.main-footer) {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  font-size: 12px;
+}
+
+footer:not(.main-footer) p {
+  color: white;
+}
+
+footer:not(.main-footer) p a {
+  color: var(--clr-blue);
+  text-decoration: none;
+}
+
+footer:not(.main-footer) p a:focus,
+footer:not(.main-footer) p a:hover {
+  color: var(--pr-blue);
+}
+footer:not(.main-footer) p i {
+  color: red;
+  font-size: 14px;
+}
+/* END FOOTER */
