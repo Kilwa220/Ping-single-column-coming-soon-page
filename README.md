@@ -8,13 +8,9 @@ Thanks for checking out this front-end coding challenge.
 
 ## Table of contents
 
-- [Frontend Mentor - Ping coming soon page](#frontend-mentor---ping-coming-soon-page)
-	- [Welcome! 👋](#welcome-)
-- [Frontend Mentor - Single price grid component](#frontend-mentor---single-price-grid-component)
-	- [Welcome! 👋](#welcome--1)
+
 - [Frontend Mentor - Intro component with sign up form](#frontend-mentor---intro-component-with-sign-up-form)
-	- [Welcome! 👋](#welcome--2)
-- [Frontend Mentor - Base Apparel coming soon page solution](#frontend-mentor---base-apparel-coming-soon-page-solution)
+	- [Welcome! 👋](#welcome)
 	- [Table of contents](#table-of-contents)
 	- [Overview](#overview)
 		- [The challenge](#the-challenge)
